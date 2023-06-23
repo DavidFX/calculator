@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Lucrarea nr. 10 - Gherlovanu David</title>
+  </head>
+
+  <body>
+    <div class="calculator">
+      <input placeholder="0" disabled class="calculator__display"></input>
+      <div class="calculator__keys">
+        <button data-value="7" class="key">7</button>
+        <button data-value="8" class="key">8</button>
+        <button data-value="9" class="key">9</button>
+        <button data-value="backspace" data-action="clear" class="key key--clear">←</button>
+        <button data-value="AC" data-action="clear-all" class="key key--clear key--all-clear">
+          AC
+        </button>
+
+        <button data-value="4" class="key">4</button>  
+        <button data-value="5" class="key">5</button>
+        <button data-value="6" class="key">6</button>
+        <button data-action="plus" data-value="+" class="key key--operator">+</button>
+        <button data-action="minus" data-value="-" class="key key--operator">-</button>
+
+
+        <button data-value="1" class="key">1</button>
+        <button data-value="2" class="key">2</button>
+        <button data-value="3" class="key">3</button>
+        <button data-action="multiply" data-value="*" class="key key--operator">&times;</button>
+        <button data-action="divide" data-value="/" class="key key--operator ">/</button>
+
+        <button data-value="." class="key">.</button>
+        <button data-value="0" class="key">0</button>
+        <button data-action="factorial" data-value="!" class="key key--operator hidden">!</button>
+
+        <button data-action="sqr" data-value="x\n2" class="key hidden key--operator">
+          x<sup>2</sup>
+        </button>
+        <button data-action="sqrt" data-value="√" class="key hidden key--operator">√</button>
+        <button data-value="(" class="key key--operator hidden">(</button>
+        <button data-value=")" class="key key--operator hidden">)</button>
+        <button data-value="=" data-action="equal" class="key key--equal">=</button>
+        
+      </div>
+    </div>
+  </body>
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/functions.js"></script> 
+</html>
